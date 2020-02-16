@@ -9,7 +9,14 @@
         <div id="leftBox">
             <h1>Etch-A-Sketch</h1>
             <p>Heres a little Etch-A-Sketch style drawing pad. Simply move your mouse over it and, just like that you're making art! WOW! Feel free to size the box with as many squares as you would like with the controls on the bottom! </p>  
-            <button type="button" class="btn btn-outline-dark btn-lg">Change Square Amount</button>
+            <button type="button" id="buttonErase" class="btn btn-danger btn-lg">Shake It Up!</button>
+            <h2>Resize The Pad</h2>
+            <div id="buttonGroup" class="btn-group" role="group" aria-label="Basic example">
+                <button id="button16" type="button" class="btn btn-secondary">16x16</button>
+                <button id="button32" type="button" class="btn btn-secondary">32x32</button>
+                <button id="button64" type="button" class="btn btn-secondary">64x64</button>
+                <button id="button128" type="button" class="btn btn-secondary">128x128</button>
+            </div>
         </div>
         <div id="rightBox">
             <div id="mainBox"></div>
