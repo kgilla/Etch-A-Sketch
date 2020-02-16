@@ -3,7 +3,7 @@ const button = document.querySelector('button');
 
 
 //number selected by user to populate grid
-const divNum = 12;
+const divNum = 64;
 const divTotal = divNum * divNum;
 
 main.style.gridTemplateColumns = `repeat(${divNum}, 1fr)`;
