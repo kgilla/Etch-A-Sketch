@@ -45,9 +45,10 @@ function builder() {
 // sets events for all elements in grid
 function eventSetter() {
     const etchBox = document.querySelectorAll('.etchBox');
-    etchBox.forEach((etchBox) => { 
+    etchBox.forEach((etchBox) => {
+        let shade = 0;
         etchBox.addEventListener('mouseover', (e) => {
-            etchBox.style.backgroundColor = 'black';
+            etchBox.style.backgroundColor = `rgba(0,0,0,${shade += 0.5})`;
         });
     });
 }
@@ -56,10 +57,8 @@ function eventSetter() {
 function eraser() {
     let etchBox = document.querySelectorAll('.etchBox');
     etchBox.forEach((etchBox) => {
-        if (etchBox.style.backgroundColor === 'black') {
+        if (etchBox.style.backgroundColor != 'gray') {
             etchBox.style.backgroundColor = 'gray';
         }
     });
 }
-
-
